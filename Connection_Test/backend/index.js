@@ -9,14 +9,14 @@ const app = express() ;
 
 const PORT = process.env.PORT || 3000 ;
 
-// app.use(express.json()) ;
+app.use(express.static('dist')) ;
 // -> /api/users -> this will send the thing to users
 
-app.get('/' , (req , res) => {
-    res.status(200).json({
-        message : "Successfully running"
-    })
-})
+// app.get('/' , (req , res) => {
+//     res.status(200).json({
+//         message : "Successfully running"
+//     })
+// })
 app.get('/api/jokes' , (req , res)=>{
     const jokes = [ 
         {

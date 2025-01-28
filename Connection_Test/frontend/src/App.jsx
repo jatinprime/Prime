@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <h1>Optimus Prime</h1>
+      <h1>Optimus Prime || Youtube</h1>
       <p>Jokes : {jokes.length}</p>
 
       {
